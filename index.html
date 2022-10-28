@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="tool.js" type="text/javascript"></script>
+    <style>
+        .box{
+            background-color: red;
+            width:200px;
+            height: 200px;
+            position: absolute;
+                    }
+        .zi{
+          margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class = "box" style = "top:0;left:0;"></div>
+    <div class = 'zi'>left值:<span></span></div>
+    <div class = 'zi'>top值:<span></span></div>
+    <script>
+        var div = document.getElementsByTagName('div')[0];
+        var lef = document.getElementsByTagName('span')[0];
+        var to = document.getElementsByTagName('span')[1];
+        
+        
+        
+        drag(div);
+    </script>
+</body>
+</html>
